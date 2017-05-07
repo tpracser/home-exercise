@@ -35,9 +35,9 @@
                     <a href="#home"><img src="resources/img/logo.png" alt="Omnifood logo" class="logo-black"></a>
                     <ul class="main-nav js--main-nav">
                         <li><a href="#features">About</a></li>
-                        <li><a href="#works">How it works</a></li>
-                        <li><a href="#cities">Our cities</a></li>
-                        <li><a href="#plans">Sign up</a></li>
+                        <li><a href="#projects">Main projects</a></li>
+                        <li><a href="#reference">References</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                     <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
                 </div>
@@ -191,49 +191,10 @@
                         </tr>
                     </table>
                 </div>
-
             </div>
-
-
-            <!-- <div class="row js--wp-1">
-                <div class="col span-1-of-2 box">
-                    <i class="ion-ios-glasses-outline icon-big"></i>
-                    <h3>Studies</h3>
-                    <p><span class="dates">2017</span><span class="events">Green Fox Academy</span> – Junior Developer</p>
-                    <p><span class="dates">2008-2010</span><span class="events">University of Pécs</span> - Andragogy Master Course</p>
-                    <p><span class="dates">2002-2007</span><span class="events">University of Pécs</span> - Master’s degree in HR Management</p>
-                    <p><span class="dates">2005/2006</span><span class="events">University of Leipzig</span> - Germany: ERASMUS scholarship</p>
-                </div>
-
-                <div class="col span-1-of-2 box">
-                    <i class="ion-ios-briefcase-outline icon-big"></i>
-                    <h3>Jobs</h3>
-                    <p><span class="dates">2011 - </span><span class="events">Labour Centre of the Government Office for Vas County</span> - consultant</p>
-                    <p><span class="dates">2008-2010</span><span class="events">University of Pécs</span> - demonstrator, training organizer</p>
-                    <p><span class="dates">2007</span><span class="events">Institut Arbeit und Gesundheit der Deutschen Gesetzlichen Unfallversicherung (Dresden)</span> - Erasmus scholarship - trainee</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col span-1-of-2 box">
-                    <i class="ion-ios-monitor-outline icon-big"></i>
-                    <h3>Programming</h3>
-                    <p class="events"><span class="dates">Language:</span>JavaScript, HTML, CSS, Python</p>
-                    <p class="events"><span class="dates">Technologies:</span>AngularJS, Node.Js, SASS, Semantic UI, MySQL</p>
-                    <p class="events"><span class="dates">Tools:</span>Webpack , Github, Karma, Jasmine, Eslint</p>
-                    <p class="events"><span class="dates">Methodology:</span>Scrum, TDD</p>
-                </div>
-
-                <div class="col span-1-of-2 box">
-                    <i class="ion-ios-chatbubble-outline icon-big"></i>
-                    <h3>Languages</h3>
-                    <p class="events"><span class="dates">German language</span>advanced level (C1) – state language exam, type C</p>
-                    <p class="events"><span class="dates">English language</span>intermediate level (B2) - state language exam, type C</p>
-                </div>
-
-            </div> -->
         </section>
 
-        <section class="section-projects">
+        <section class="section-projects" id="projects">
             <div class="row">
                 <h2>Main projects</h2>
                 <p class="long-copy">WHat i used:
@@ -260,15 +221,31 @@
                     <img src="resources/img/todo.jpg" alt="ToDo application">
                 </div>
                 <div class="col span-2-of-3 code-box">
-                    <pre><code>nav.slideToggle(200);
-
-                    if(icon.hasClass('ion-navicon-round')) {
-                        icon.addClass('ion-close-round');
-                        icon.removeClass('ion-navicon-round')
-                    } else {
-                        icon.addClass('ion-navicon-round');
-                        icon.removeClass('ion-close-round')
-                    }</code></pre>
+                    <pre><code>function addItem() {
+    var listElement = document.createElement("li");
+    var todo = document.createElement("span");
+    var trash = document.createElement("i");
+    trash.className = "ion-trash-a";
+    var checkbox = document.createElement("i");
+    checkbox.className = "ion-android-checkbox-outline-blank";
+    checkbox.addEventListener("click", function(event){
+        console.log(event);
+        console.log(this);
+    });
+    todo.textContent = inputField.value;
+    inputField.value = "";
+    listElement.appendChild(todo);
+    listElement.appendChild(checkbox);
+    listElement.appendChild(trash);
+    ul.appendChild(listElement);
+    var xhr = new XMLHttpRequest();
+    xhr.open('POST', "https://mysterious-dusk-8248.herokuapp.com/todos");
+    xhr.setRequestHeader("Content-Type", "application/json");
+    xhr.send(JSON.stringify({
+        "text": todo.textContent
+    }));
+}
+                    </code></pre>
                 </div>
             </div>
             <div class="row">
@@ -304,54 +281,6 @@
                 </div>
             </div>
         </section>
-
-<!--
-        <section class="section-meals">
-            <ul class="meals-showcase clearfix">
-                <li>
-                    <figure class="meal-photo">
-                        <img src="resources/img/1.jpg" alt="Korean bibimbap with egg and vegetables">
-                    </figure>
-                </li>
-                <li>
-                    <figure class="meal-photo">
-                        <img src="resources/img/2.jpg" alt="Simple italian pizza with cherry tomatoes">
-                    </figure>
-                </li>
-                <li>
-                    <figure class="meal-photo">
-                        <img src="resources/img/3.jpg" alt="Chicken breast steak with vegetables">
-                    </figure>
-                </li>
-                <li>
-                    <figure class="meal-photo">
-                        <img src="resources/img/4.jpg" alt="Autumn pumpkin soup">
-                    </figure>
-                </li>
-            </ul>
-            <ul class="meals-showcase clearfix">
-                <li>
-                    <figure class="meal-photo">
-                        <img src="resources/img/5.jpg" alt="Paleo beef steak with vegetables">
-                    </figure>
-                </li>
-                <li>
-                    <figure class="meal-photo">
-                        <img src="resources/img/6.jpg" alt="Healthy baguette with egg and vegetables">
-                    </figure>
-                </li>
-                <li>
-                    <figure class="meal-photo">
-                        <img src="resources/img/7.jpg" alt="Burger with cheddar and bacon">
-                    </figure>
-                </li>
-                <li>
-                    <figure class="meal-photo">
-                        <img src="resources/img/8.jpg" alt="Granola with cherries and strawberries">
-                    </figure>
-                </li>
-            </ul>
-        </section> -->
 
         <section class="section-steps" id="works">
             <div class="row">
@@ -453,7 +382,7 @@
             </div>
         </section>
 
-        <section class="section-testimonilas">
+        <section class="section-testimonilas" id="reference">
             <div class="row">
                 <h2>Personal characteristics</h2>
             </div>
@@ -536,53 +465,55 @@
                 </div>
         </section>
 
-        <div class="map-box">
+        <section id="contact">
+            <div class="map-box">
 
-            <div class="map"></div>
+                <div class="map"></div>
 
-            <div class="form-box">
+                <div class="form-box">
 
-                <div class="row">
-                    <h2>We're happy to hear from you</h2>
-                </div>
-                <div class="row">
-                    <form class="contact-form" action="#" method="post">
-                        <div class="row">
-                            <div class="col span-1-of-3">
-                                <label for="name">Name</label>
+                    <div class="row">
+                        <h2>Send me a message!</h2>
+                    </div>
+                    <div class="row">
+                        <form class="contact-form" action="#" method="post">
+                            <div class="row">
+                                <div class="col span-1-of-3">
+                                    <label for="name">Name</label>
+                                </div>
+                                <div class="col span-2-of-3">
+                                    <input type="text" name="name" id="name" placeholder="Your name" required>
+                                </div>
                             </div>
-                            <div class="col span-2-of-3">
-                                <input type="text" name="name" id="name" placeholder="Your name" required>
+                            <div class="row">
+                                <div class="col span-1-of-3">
+                                    <label for="email">Email</label>
+                                </div>
+                                <div class="col span-2-of-3">
+                                    <input type="email" name="email" id="email" placeholder="Your email" required>
+                                </div>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="col span-1-of-3">
-                                <label for="email">Email</label>
+                            <div class="row">
+                                <div class="col span-1-of-3">
+                                    <label for="message">Drop me a line</label>
+                                </div>
+                                <div class="col span-2-of-3">
+                                    <textarea name="message" placeholder="Your message" id="message"></textarea>
+                                </div>
                             </div>
-                            <div class="col span-2-of-3">
-                                <input type="email" name="email" id="email" placeholder="Your email" required>
+                            <div class="row">
+                                <div class="col span-1-of-3">
+                                    <label>&nbsp;</label>
+                                </div>
+                                <div class="col span-2-of-3">
+                                    <input type="submit" value="Send it!">
+                                </div>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="col span-1-of-3">
-                                <label for="message">Drop me a line</label>
-                            </div>
-                            <div class="col span-2-of-3">
-                                <textarea name="message" placeholder="Your message" id="message"></textarea>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col span-1-of-3">
-                                <label>&nbsp;</label>
-                            </div>
-                            <div class="col span-2-of-3">
-                                <input type="submit" value="Send it!">
-                            </div>
-                        </div>
-                    </form>
+                        </form>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
 
         <footer>
             <div class="row">

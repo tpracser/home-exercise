@@ -382,6 +382,13 @@ header {
     width: 100%;
     padding: 2%;
     background-color: #fff;
+    font-size: 90%;
+    overflow: scroll;
+}
+
+.section-projects pre::-webkit-scrollbar,
+.section-projects pre code::-webkit-scrollbar {
+    display: none;
 }
 
 .section-projects img {
