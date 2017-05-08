@@ -197,26 +197,50 @@
         <section class="section-projects" id="projects">
             <div class="row">
                 <h2>Main projects</h2>
-                <p class="long-copy">WHat i used:
-                </p>
+                <p class="long-copy">I used this shits</p>
             </div>
             <div class="row">
+                <p class="info left">I used
+                    <i class="ion-social-html5-outline icon-small"></i>
+                    <i class="ion-social-css3-outline icon-small"></i>
+                    <i class="ion-social-javascript-outline icon-small"></i>
+                    <i class="ion-social-nodejs icon-small"></i>
+                    <i class="ion-social-sass icon-small"></i>
+                    <i class="ion-social-angular-outline icon-small"></i>to build
+                </p>
                 <div class="col span-2-of-3 code-box">
-                    <pre><code>nav.slideToggle(200);
+                    <pre><code>var rightButton = document.querySelector(".right-arrow");
+rightButton.addEventListener("click", right_direction);
+var container = document.querySelector("#main-image");
+var image = document.createElement("img");
 
-                    if(icon.hasClass('ion-navicon-round')) {
-                        icon.addClass('ion-close-round');
-                        icon.removeClass('ion-navicon-round')
-                    } else {
-                        icon.addClass('ion-navicon-round');
-                        icon.removeClass('ion-close-round')
-                    }</code></pre>
+var i = 0;
+image.setAttribute("src", images[i]);
+container.appendChild(image);
+
+function right_direction(){
+    i++;
+    if(images.length > i) {
+        image.setAttribute("src", images[i]);
+    } else {
+        image.setAttribute("src", images[0]);
+        i = 0;
+    }
+}</code></pre>
                 </div>
                 <div class="col span-1-of-3 code-box">
                     <img src="resources/img/picture-galery.jpg" alt="Picture galery">
                 </div>
             </div>
             <div class="row">
+                <p class="info right">I used
+                    <i class="ion-social-html5-outline icon-small"></i>
+                    <i class="ion-social-css3-outline icon-small"></i>
+                    <i class="ion-social-javascript-outline icon-small"></i>
+                    <i class="ion-social-nodejs icon-small"></i>
+                    <i class="ion-social-sass icon-small"></i>
+                    <i class="ion-social-angular-outline icon-small"></i>to build
+                </p>
                 <div class="col span-1-of-3 code-box">
                     <img src="resources/img/todo.jpg" alt="ToDo application">
                 </div>
@@ -244,40 +268,71 @@
     xhr.send(JSON.stringify({
         "text": todo.textContent
     }));
-}
-                    </code></pre>
+}</code></pre>
                 </div>
             </div>
             <div class="row">
+                <p class="info left">I used
+                    <i class="ion-social-html5-outline icon-small"></i>
+                    <i class="ion-social-css3-outline icon-small"></i>
+                    <i class="ion-social-javascript-outline icon-small"></i>
+                    <i class="ion-social-nodejs icon-small"></i>
+                    <i class="ion-social-sass icon-small"></i>
+                    <i class="ion-social-angular-outline icon-small"></i>to build
+                </p>
                 <div class="col span-2-of-3 code-box">
-                    <pre><code>nav.slideToggle(200);
+                    <pre><code>function play(event){
+    console.log(event.currentTarget.dataset.id);
 
-                    if(icon.hasClass('ion-navicon-round')) {
-                        icon.addClass('ion-close-round');
-                        icon.removeClass('ion-navicon-round')
-                    } else {
-                        icon.addClass('ion-navicon-round');
-                        icon.removeClass('ion-close-round')
-                    }</code></pre>
+    currentTrack = event.currentTarget.dataset.id
+    mainPlayer.setAttribute("src", tracks[currentTrack].source);
+
+    var actualAlbumToLogOut = tracks[currentTrack].album;
+    var actualArtistToLogOut = tracks[currentTrack].artist;
+    var actualTrack =
+        document.querySelector(".currently-playing-album-infos");
+    actualTrack.innerHTML = actualAlbumToLogOut
+        + ': &#60;br&#62;&#60;span class="album-title"&#62;'
+        + actualArtistToLogOut + '&#60;/span&#62;';
+    cianMark();
+}</code></pre>
                 </div>
                 <div class="col span-1-of-3 code-box">
                     <img src="resources/img/musicplayer.jpg" alt="Music player">
                 </div>
             </div>
             <div class="row">
+                <p class="info right">I used
+                    <i class="ion-social-html5-outline icon-small"></i>
+                    <i class="ion-social-css3-outline icon-small"></i>
+                    <i class="ion-social-javascript-outline icon-small"></i>
+                    <i class="ion-social-nodejs icon-small"></i>
+                    <i class="ion-social-sass icon-small"></i>
+                    <i class="ion-social-angular-outline icon-small"></i>to build
+                </p>
                 <div class="col span-1-of-3 code-box">
                     <img src="resources/img/rss-reader.jpg" alt="Zerda rss reader">
                 </div>
                 <div class="col span-2-of-3 code-box">
-                    <pre><code>nav.slideToggle(200);
+                    <pre><code>&#60;form class="ui large form" id="login-box" method="post"
+    name="signin" novalidate&#62;
+    &#60;div class="field"&#62;
+        &#60;div class="ui left icon input"&#62;
+            &#60;i id="mail-outline-icon" class="mail outline icon"&#62;&#60;/i&#62;
 
-                    if(icon.hasClass('ion-navicon-round')) {
-                        icon.addClass('ion-close-round');
-                        icon.removeClass('ion-navicon-round')
-                    } else {
-                        icon.addClass('ion-navicon-round');
-                        icon.removeClass('ion-close-round')
-                    }</code></pre>
+            &#60;!-- Email inputfield --&#62;
+            &#60;input class="field" type="email"
+                placeholder="example@gmail.com" name="email"
+                ng-model="loginCtrl.email" ng-required="true"&#62;
+        &#60;/div&#62;
+        &#60;div ng-show="signin.email.$touched &&
+            signin.email.$invalid"&#62;
+            &#60;small class="error-message"&#62;Invalid e-mail adress&#60;/small&#62;
+        &#60;/div&#62;
+    &#60;/div&#62;
+    &#60;div class="field"&#62;
+        &#60;div class="ui left icon input"&#62;
+            &#60;i id="lock-icon" class="lock icon"&#62;&#60;/i&#62;</code></pre>
                 </div>
             </div>
         </section>
