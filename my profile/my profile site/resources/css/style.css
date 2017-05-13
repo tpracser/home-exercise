@@ -420,6 +420,10 @@ header {
     cursor: pointer;
 }
 
+.code-image-box .text a {
+    border: 0;
+}
+
 .section-projects img {
     width: 100%;
     height: inherit;
