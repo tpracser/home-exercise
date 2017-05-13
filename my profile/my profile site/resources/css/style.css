@@ -407,6 +407,9 @@ header {
     width: 100%;
     z-index: 100;
     background: rgba(0,0,0,0.8);
+    -webkit-transition: -webkit-ease-out 0.7s;
+    transition: ease-out 0.7s;
+    transform: scale(0.01);
 }
 
 .code-image-box .text i {
@@ -414,13 +417,14 @@ header {
     padding-left: 20px;
     position: relative;
     top: 35%;
+    cursor: pointer;
 }
 
 .section-projects img {
-
     width: 100%;
     height: inherit;
     display: block;
+    transition: ease-out 0.7s;
 }
 
     /*.section-projects img {
@@ -442,8 +446,9 @@ header {
 
 .section-projects .code-image-box:hover .text {
     opacity: 1;
-    -webkit-transition: -webkit-ease-out 1s;
-    transition: ease-out 1s;
+    -webkit-transition: -webkit-ease-out 0.7s;
+    transition: ease-out 0.7s;
+    transform: scale(1);
 }
 
 .section-projects .code-image-box:hover img {
