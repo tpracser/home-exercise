@@ -82,9 +82,9 @@ $(document).ready(function(){
 
     var map = new GMaps ({
         div: '.map',
-        lat: 47.230897,
-        lng: 16.741129,
-        zoom: 12
+        lat: 47.330897,
+        lng: 17.641129,
+        zoom: 9
     });
 
     map.addMarker({
