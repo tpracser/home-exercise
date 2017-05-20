@@ -718,31 +718,27 @@ input[type=checkbox] {
 footer {
     background-color: #333;
     padding: 50px;
-    font-size: 80%;
+    font-size: 90%;
 }
 
-.footer-nav {
-    list-style-type: none;
-    float: left;
+footer .row {
+    display: flex;
+    justify-content: center;
 }
 
 .social-links {
     list-style-type: none;
-    float: right;
 }
 
-.footer-nav li, .social-links li {
+.social-links li {
     display: inline-block;
     margin-right: 20px;
 }
 
-.footer-nav li:last-child,
 .social-links li:last-child {
     margin-right: 0;
 }
 
-.footer-nav li a:link,
-.footer-nav li a:visited,
 .social-links li a:link,
 .social-links li a:visited {
     text-decoration: none;
@@ -752,38 +748,33 @@ footer {
     transition: color 0.2s;
 }
 
-.footer-nav li a:hover,
-.footer-nav li a:active {
-    color: #ddd;
-}
-
 .social-links li a:link,
 .social-links li a:visited {
-    font-size: 160%;
+    font-size: 300%;
 }
 
-.ion-social-facebook,
-.ion-social-twitter,
-.ion-social-googleplus,
-.ion-social-instagram {
+.ion-social-linkedin {
     -webkit-transition: color 0.2s;
     transition: color 0.2s;
 }
 
-.ion-social-facebook:hover {
-    color: #3b5998;
+.prezi {
+    display: block;
+    width: 45px;
+    height: 45px;
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+    background: url("../img/icons/prezi-logo-grey.png") no-repeat center center;
+    background-size: cover;
 }
 
-.ion-social-twitter:hover {
-    color: #00aced;
+.ion-social-linkedin:hover {
+    color: #0077B5;
 }
 
-.ion-social-googleplus:hover {
-    color: #dd4b39;
-}
-
-.ion-social-instagram:hover {
-    color: #517fa4;
+.prezi:hover {
+    background: url("../img/icons/prezi-logo.png") no-repeat center center;
+    background-size: cover;
 }
 
 footer p {
