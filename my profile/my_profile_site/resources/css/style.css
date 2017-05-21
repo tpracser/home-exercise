@@ -1,0 +1,683 @@
+/* ------------------------------------- */
+/* BASIC SETUP */
+/* ------------------------------------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+    background-color: #fff;
+    color: #555;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+.clearfix {zoom: 1}
+.clearfix:after {
+    content: ".";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+/* ------------------------------------- */
+/* REUSABLE COMPONENTS */
+/* ------------------------------------- */
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 80px 0;
+}
+
+.box {
+    padding: 1%;
+}
+
+/* ----- HEADINGS ----- */
+
+h1, h2, h3 {
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 240%;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+h3 {
+    font-size: 110%;
+    margin-bottom: 15px;
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: #e67e22;
+    content:" ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+
+/* ----- PARAGRAPHS ----- */
+
+.long-copy {
+    line-height: 145%;
+    width: 80%;
+    margin-left: 10%;
+    text-align: justify;
+}
+
+.box p {
+    font-size: 90%;
+    line-height: 145%;
+}
+
+/* ----- Table ----- */
+
+table {
+    font-size: 90%;
+    line-height: 145%;
+}
+
+table .dates {
+    color: #e67e22;
+    font-weight: 300;
+    padding: 0;
+    text-align: end;
+}
+
+table .places {
+    font-weight: 500;
+    text-align: start;
+}
+
+table .infos {
+    text-align: left;
+    text-align: start;
+}
+
+table .programming {
+    padding-left: 10px;
+}
+
+/* ----- ICONS ----- */
+
+.icon-big {
+    font-size: 350%;
+    display: block;
+    color: #e67e22;
+    margin-bottom: 10px;
+}
+
+.icon-small {
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    color: #e67e22;
+    font-size: 120%;
+    margin-right: 10px;
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top: -5px;
+}
+
+/* ----- LINKS ----- */
+
+a:link, a:visited {
+    color: #e67e22;
+    text-decoration: none;
+    padding-bottom: 1px;
+    border-bottom: 1px solid #e67e22;
+    -webkit-transition: border-bottom 0.2s, color 0.2s;
+    transition: border-bottom 0.2s, color 0.2s;
+}
+
+a:hover, a:active {
+    color: #555;
+    border-bottom: 1px solid transparent;
+}
+
+/* ----- BUTTONS ----- */
+
+.btn:link,
+.btn:visited,
+input[type=submit] {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-full:link,
+.btn-full:visited,
+input[type=submit] {
+    background-color: #e67e22;
+    border: 1px solid #e67e22;
+    color: #fff;
+    margin-right: 15px;
+}
+
+.btn-ghost:link, .btn-ghost:visited {
+    border: 1px solid #e67e22;
+    color: #e67e22;
+}
+
+.btn:hover,
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active {
+    background-color: #cf6d17
+}
+
+.btn-full:hover, .btn-full:active {
+    border: 1px solid #cf6d17;
+}
+
+.btn-ghost:hover, .btn-ghost:active {
+    border: 1px solid #cf6d17;
+    color: #fff;
+}
+
+.hero-text-box .btn-full:link,
+.hero-text-box .btn-full:visited,
+.hero-text-box input[type=submit] {
+    margin-top: 0.7em;
+}
+
+.btn .ion-ios-email-outline {
+    margin-left: 17px;
+    font-size: 140%;
+    vertical-align: middle;
+    line-height: 0;
+}
+
+/* ------------------------------------- */
+/* HEADER */
+/* ------------------------------------- */
+
+header {
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/laptop.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/laptop-min.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+.hero-text-box {
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.hero-text-box h1 {
+    line-height: 0.7em;
+}
+
+.hero-text-box h1 span {
+    font-size: 60%;
+}
+
+.logo {
+    height: 100px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+}
+
+.logo-black {
+    display: none;
+    height: 50px;
+    width: auto;
+    float: left;
+    margin: 5px 0;
+}
+
+/* MAIN NAVI */
+
+.main-nav {
+    float: right;
+    list-style-type: none;
+    margin-top: 55px;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.main-nav li a:link, .main-nav li a:visited  {
+    padding: 8px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    -webkit-transition: border-bottom 0.2s;
+    transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover, .main-nav li a:active  {
+    border-bottom: 2px solid #e67e22;
+}
+
+/* MOBILE NAVI */
+
+.mobile-nav-icon {
+    float: right;
+    margin-top: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-nav-icon i {
+    font-size: 200%;
+    color: #fff;
+}
+
+/* STICKY NAVI */
+
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.98);
+    box-shadow: 0 2px 2px #efefef;
+    z-index: 9999;
+}
+
+.sticky .main-nav {
+    margin-top: 18px;
+}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited  {
+    padding: 16px 0;
+    color: #555;
+}
+
+.sticky .logo {
+    display: none;
+}
+
+.sticky .logo-black {
+    display: block;
+}
+
+/* ------------------------------------- */
+/* FEATURES */
+/* ------------------------------------- */
+
+.section-features .long-copy {
+    margin-bottom: 30px;
+}
+
+.section-features .col:nth-child(3){
+    margin-left: 0;
+}
+
+.section-features .col .dates{
+    display: inline-block;
+    /*width: 20%;*/
+    width: 100px;
+    font-weight: 300;
+    color: #e67e22;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.section-features .col .events{
+    font-weight: 500;
+}
+
+/* ------------------------------------- */
+/* PROJECTS */
+/* ------------------------------------- */
+
+.section-projects {
+    background-color: #f4f4f4;
+}
+
+.section-projects .col {
+    height: 300px;
+    margin: 10px 0 10px 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.section-projects pre {
+    height: inherit;
+    width: 100%;
+    padding: 2%;
+    background-color: #fff;
+    font-size: 90%;
+    overflow: scroll;
+}
+
+.section-projects pre::-webkit-scrollbar,
+.section-projects pre code::-webkit-scrollbar {
+    display: none;
+}
+
+.code-image-box {
+    position: relative;
+    padding: 0;
+    text-align: center;
+    overflow: hidden;
+}
+
+.code-image-box .text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    background: rgba(0,0,0,0.8);
+    -webkit-transition: -webkit-ease-out 0.7s;
+    transition: ease-out 0.7s;
+    transform: scale(0.01);
+}
+
+.code-image-box .text i {
+    display: inline-block;
+    margin-left: 20px;
+    position: relative;
+    top: 35%;
+    cursor: pointer;
+}
+
+.code-image-box .text a {
+    border: 0;
+}
+
+.section-projects img {
+    width: 100%;
+    height: inherit;
+    display: block;
+    transition: ease-out 0.7s;
+}
+
+.section-projects .code-image-box:hover .text {
+    opacity: 1;
+    -webkit-transition: -webkit-ease-out 0.7s;
+    transition: ease-out 0.7s;
+    transform: scale(1);
+}
+
+.section-projects .code-image-box:hover img {
+    -webkit-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    transform: scale(1.5);
+    -webkit-transition: -webkit-transform 1s, opacity 1s;
+    transition: transform 1s, opacity 1s;
+}
+
+.row.projects {
+    margin-bottom: 30px;
+}
+
+.programming-info {
+    padding: 30px 20px 0 20px;
+}
+
+.programming-info.left {
+    text-align: left;
+}
+
+.programming-info.right {
+    text-align: right;
+    margin-right: 20px;
+}
+
+/*Prettyphoto gallery*/
+
+.pp_pic_holder a {
+    border: 0;
+}
+
+/* ------------------------------------- */
+/* REFERENCE */
+/* ------------------------------------- */
+
+.section-reference {
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/workshop.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url(img/workshop.jpg);
+    background-size: cover;
+    color: #fff;
+    background-attachment: fixed;
+    position: relative;
+}
+
+blockquote {
+    padding: 2%;
+    font-style: italic;
+    line-height: 145%;
+    position: relative;
+    margin-top: 40px;
+}
+
+blockquote:before {
+    content: "\201C";
+    font-size: 500%;
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+}
+
+cite {
+    font-size: 110%;
+    margin-top: 25px;
+    display: block;
+}
+
+cite img {
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.section-reference p {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    color: #555;
+}
+
+/* ------------------------------------- */
+/* FORM */
+/* ------------------------------------- */
+
+.contact-form {
+    width: 90%;
+    margin: 0 auto;
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    height: 100px;
+}
+
+input[type=checkbox] {
+    margin: 10px 5px 10px 0;
+}
+
+input[type=submit] {
+    cursor: pointer;
+}
+
+*:focus {
+    outline: none;
+}
+
+.map-box {
+    width: 100%;
+    height: 560px;
+    position: relative;
+}
+
+.map {
+    position: relative;
+    width: 100%;
+    height: 560px;
+    z-index: 0;
+}
+
+.form-box {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 560px;
+    width: 50%;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 10;
+    padding-top: 40px;
+}
+
+.form-messages {
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    padding: 10px;
+    border-radius: 3px;
+    color: #333;
+    text-align: center;
+}
+
+.success { background-color: rgba(38, 191, 68, 0.8); }
+
+.error { background-color: rgba(209, 46, 46, 0.8); }
+
+/* ------------------------------------- */
+/* FOOTER */
+/* ------------------------------------- */
+
+footer {
+    background-color: #333;
+    padding: 50px;
+    font-size: 90%;
+}
+
+footer .row {
+    display: flex;
+    justify-content: center;
+}
+
+.social-links {
+    list-style-type: none;
+}
+
+.social-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.social-links li:last-child {
+    margin-right: 0;
+}
+
+.social-links li a:link,
+.social-links li a:visited {
+    text-decoration: none;
+    border: 0;
+    color: #888;
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+}
+
+.social-links li a:link,
+.social-links li a:visited {
+    font-size: 300%;
+}
+
+.ion-social-linkedin {
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+}
+
+.prezi {
+    display: block;
+    width: 45px;
+    height: 45px;
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+    background: url("../img/icons/prezi-logo-grey.png") no-repeat center center;
+    background-size: cover;
+}
+
+.ion-social-linkedin:hover {
+    color: #0077B5;
+}
+
+.prezi:hover {
+    background: url("../img/icons/prezi-logo.png") no-repeat center center;
+    background-size: cover;
+}
+
+footer p {
+    color: #888;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* ------------------------------------- */
+/* ANIMATIONS */
+/* ------------------------------------- */
+
+.js--wp-1, .js--wp-2 {
+    opacity: 0;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+.js--wp-1.animated,
+.js--wp-2.animated {
+    opacity: 1;
+}
