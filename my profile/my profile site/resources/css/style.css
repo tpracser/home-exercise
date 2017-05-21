@@ -477,80 +477,6 @@ header {
 }
 
 /* ------------------------------------- */
-/* HOW IT WORKS */
-/* ------------------------------------- */
-
-.section-steps {
-    background-color: #f4f4f4;
-}
-
-.steps-box {
-    margin-top: 30px;
-}
-
-.steps-box:first-child {
-    text-align: right;
-    padding-right: 3%;
-    /*margin-top: 30px;*/
-}
-
-.steps-box:last-child {
-    text-align: left;
-    padding-left: 3%;
-    margin-top: 70px;
-}
-
-.app-screen {
-    width: 40%;
-}
-
-.works-step {
-    margin-bottom: 50px;
-}
-
-.works-step:last-of-type {
-    margin-bottom: 80px;
-}
-
-.works-step div{
-    color: #e67e22;
-    font-size: 150%;
-    height: 55px;
-    width: 55px;
-    border: 2px solid #e67e22;
-    border-radius: 50%;
-    display: inline-block;
-    text-align: center;
-    float: left;
-    margin-right: 25px;
-    padding: 5px;
-}
-
-.btn-app:link, .btn-app:visited {
-    border: 0;
-}
-
-.btn-app img {
-    height: 50px;
-    width: auto;
-    margin-right: 10px;
-}
-
-/* ------------------------------------- */
-/* CITIES */
-/* ------------------------------------- */
-
-.box img {
-    width: 100%;
-    height: auto;
-    margin-bottom: 15px;
-}
-
-.city-feature {
-    margin-bottom: 5px;
-}
-
-/* ------------------------------------- */
 /* TESTIMONIALS */
 /* ------------------------------------- */
 
@@ -601,62 +527,6 @@ cite img {
 }
 
 /* ------------------------------------- */
-/* SIGN UP */
-/* ------------------------------------- */
-
-.section-plans {
-    background-color: #f4f4f4;
-}
-
-.plan-box {
-    background-color: #fff;
-    border-radius: 5px;
-    width: 90%;
-    margin-left: 5%;
-    box-shadow: 0 2px 2px #efefef;
-}
-
-.plan-box div {
-    padding: 15px;
-    border-bottom: 1px solid #e8e8e8;
-}
-
-.plan-box div:first-child {
-    background-color: #fcfcfc;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-}
-
-.plan-box div:last-child {
-    text-align: center;
-    border: 0;
-}
-
-.plan-price {
-    font-size: 300%;
-    margin-bottom: 10px;
-    font-weight: 100;
-    color: #e67e22;
-}
-
-.plan-price span {
-    font-size: 30%;
-    font-weight: 300;
-}
-
-.plan-price-meal {
-    font-size: 80%;
-}
-
-.plan-box ul {
-    list-style-type: none;
-}
-
-.plan-box ul li {
-    padding: 5px 0;
-}
-
-/* ------------------------------------- */
 /* FORM */
 /* ------------------------------------- */
 
@@ -681,6 +551,10 @@ textarea {
 
 input[type=checkbox] {
     margin: 10px 5px 10px 0;
+}
+
+input[type=submit] {
+    cursor: pointer;
 }
 
 *:focus {
@@ -787,19 +661,13 @@ footer p {
 /* ANIMATIONS */
 /* ------------------------------------- */
 
-.js--wp-1, .js--wp-2, .js--wp-3  {
+.js--wp-1, .js--wp-2 {
     opacity: 0;
     -webkit-animation-duration: 1s;
     animation-duration: 1s;
 }
 
-.js--wp-4 {
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-}
-
 .js--wp-1.animated,
-.js--wp-2.animated,
-.js--wp-3.animated {
+.js--wp-2.animated {
     opacity: 1;
 }
