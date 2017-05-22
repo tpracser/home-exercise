@@ -442,9 +442,11 @@ function right_direction(){
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="vendors/js/jquery.waypoints.min.js"></script>
-    <script src="http://maps.google.com/maps/api/js"></script>
-    <script src="resources/js/script.js"></script>
     <script src="resources/js/gmaps.js"></script>
+    <!-- <script src="http://maps.google.com/maps/api/js"></script> -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAf9flZ2-20NCmwMUu6fg8zMqH1RZR76m8&callback=initMap"
+    async defer></script>
+    <script src="resources/js/script.js"></script>
     <script src="resources/js/highlight.pack.js"></script>
     <script src="vendors/js/prettyPhoto/jquery.prettyPhoto.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>

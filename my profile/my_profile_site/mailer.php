@@ -8,7 +8,7 @@
 
     // Check the data.
     if (empty($name) OR empty($message) OR !filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        header("Location: http://www.webdesigncourse.co/omnifood/index.php?success=-1#form");
+        header("Location: http://www.pracsertamas.hu/index.php?success=-1#form");
         exit;
     }
 
