@@ -17,14 +17,13 @@
         <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" >
         <title>Portfolio | Prácser Tamás</title>
 
-
-        <link rel="apple-touch-icon" sizes="180x180" href="resources/favicons/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="resources/favicons/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="resources/favicons/favicon-16x16.png">
-        <link rel="manifest" href="resources/favicons/manifest.json">
-        <link rel="mask-icon" href="resources/favicons/safari-pinned-tab.svg" color="#5bbad5">
-        <link rel="shortcut icon" href="resources/favicons/favicon.ico">
-        <meta name="msapplication-config" content="resources/favicons/browserconfig.xml">
+        <link rel="apple-touch-icon" sizes="76x76" href="/resources/favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/resources/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/resources/favicons/favicon-16x16.png">
+        <link rel="manifest" href="/resources/favicons/manifest.json">
+        <link rel="mask-icon" href="/resources/favicons/safari-pinned-tab.svg" color="#5bbad5">
+        <link rel="shortcut icon" href="/resources/favicons/favicon.ico">
+        <meta name="msapplication-config" content="/resources/favicons/browserconfig.xml">
         <meta name="theme-color" content="#ffffff">
 
     </head>
@@ -445,7 +444,7 @@ function right_direction(){
     <script src="resources/js/gmaps.js"></script>
     <!-- <script src="http://maps.google.com/maps/api/js"></script> -->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAf9flZ2-20NCmwMUu6fg8zMqH1RZR76m8&callback=initMap"
-    async defer></script>
+    ></script>
     <script src="resources/js/script.js"></script>
     <script src="resources/js/highlight.pack.js"></script>
     <script src="vendors/js/prettyPhoto/jquery.prettyPhoto.js"></script>
