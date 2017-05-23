@@ -200,10 +200,10 @@
                 Through many tasks I have learned the basics of the programming and used this knowledge in more complex projects. If you are interested in the details, click on the images! </p>
             </div>
             <div class="row js--wp-2">
-                <p class="programming-info left">I used
+                <p class="programming-info left">Image gallery with thumbnail carousel, using
                     <i class="ion-social-html5-outline icon-small"></i>
                     <i class="ion-social-css3-outline icon-small"></i>and
-                    <i class="ion-social-javascript-outline icon-small"></i>to build an image gallery with thumbnail carousel.
+                    <i class="ion-social-javascript-outline icon-small"></i>
                 </p>
                 <div class="col span-2-of-3 code-box">
                     <pre><code>var rightButton = document.querySelector(".right-arrow");
@@ -234,10 +234,10 @@ function right_direction(){
                 </div>
             </div>
             <div class="row">
-                <p class="programming-info right">I used
+                <p class="programming-info right">ToDo app, which communicates with a server, using
                     <i class="ion-social-html5-outline icon-small"></i>
                     <i class="ion-social-css3-outline icon-small"></i>and
-                    <i class="ion-social-javascript-outline icon-small"></i>to build a ToDo app, witch communicate with a server.
+                    <i class="ion-social-javascript-outline icon-small"></i>
                 </p>
                 <div class="col span-1-of-3 code-image-box">
                     <span class="text">
@@ -274,11 +274,11 @@ function right_direction(){
                 </div>
             </div>
             <div class="row">
-                <p class="programming-info left">I used
+                <p class="programming-info left">Music player, using
                     <i class="ion-social-html5-outline icon-small"></i>
                     <i class="ion-social-css3-outline icon-small"></i>
                     <i class="ion-social-javascript-outline icon-small"></i>and
-                    <i class="ion-social-nodejs icon-small"></i>to build a musicplayer.
+                    <i class="ion-social-nodejs icon-small"></i>
                 </p>
                 <div class="col span-2-of-3 code-box">
                     <pre><code>function play(event){
@@ -306,13 +306,13 @@ function right_direction(){
                 </div>
             </div>
             <div class="row">
-                <p class="programming-info right">The team Malachit used
+                <p class="programming-info right">Front-end of an RSS reader, built as part of the team Malachit, using
                     <i class="ion-social-html5-outline icon-small"></i>
                     <i class="ion-social-css3-outline icon-small"></i>
                     <i class="ion-social-javascript-outline icon-small"></i>
                     <i class="ion-social-nodejs icon-small"></i>
                     <i class="ion-social-sass icon-small"></i>and
-                    <i class="ion-social-angular-outline icon-small"></i>to build the front-end of an Rss-reader.
+                    <i class="ion-social-angular-outline icon-small"></i>
                 </p>
                 <div class="col span-1-of-3 code-image-box">
                     <span class="text">
