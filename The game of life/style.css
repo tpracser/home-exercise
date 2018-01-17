@@ -1,0 +1,35 @@
+html, body {
+    height: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.main-container {
+    width: 1000px;
+    height: 500px;
+    background-color: #dddddd;
+
+
+}
+
+tr td:last-child {
+    border-right: 1px solid black;
+}
+
+table {
+    border-bottom: 1px solid black;
+    border-collapse: collapse;
+}
+
+td {
+    width: 20px;
+    height: 20px;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    box-sizing: border-box;
+}
+
+.gold {
+    background-color: gold;
+}
